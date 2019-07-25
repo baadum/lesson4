@@ -10,12 +10,15 @@
   
 <script>
     var userNumber= +prompt("Введите число","");
-    var star ="*";
+    var star = "";
 
-    for (i = 1; i <= userNumber; userNumber--) {  
-        console.log(star);
-        star+="*"   
+    for (i = 1; i <= userNumber; i++) {
+        for(j = 1; j <= i; j++)  {
+            star+="*"
+        }
+        star += "\n"
     }
+    console.log(star);
 
 </script>
 </body>
